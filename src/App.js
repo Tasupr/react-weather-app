@@ -1,15 +1,14 @@
-import './App.css';
-import Weather from './weather';
+import React, { Component } from "react";
+import Navigation from "./Navigation";
+import Main from "./Main";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        < Weather />
-        <a href="https://github.com/Tasupr/react-weather-app">My GitHub link here</a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navigation />
+        <Main />
+      </div>
+    );
+  }
 }
-
-export default App;
